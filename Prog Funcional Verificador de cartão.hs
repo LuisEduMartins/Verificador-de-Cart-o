@@ -1,10 +1,10 @@
 
 addSum :: String -> String
 addSum input =
-  let digitos = map (\c -> read [c] :: Int) input -- Converte cada dígito para um inteiro
-      sumDigits = sum digitos -- Soma os dígitos
-      verificadores = show sumDigits -- Verificadores recebe a soma dos números transformada em String
-  in input ++ verificadores -- Concatena o 8 primeiros dígitos com os verificadores
+  let digitos = map (\c -> read [c] :: Int) input 
+      sumDigits = sum digitos 
+      verificadores = show sumDigits 
+  in input ++ verificadores 
 
 validaCartao :: String -> String
 validaCartao cartao
